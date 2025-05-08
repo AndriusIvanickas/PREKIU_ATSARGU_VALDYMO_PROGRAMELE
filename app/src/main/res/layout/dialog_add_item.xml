@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical" android:padding="16dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <EditText android:id="@+id/inputName"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Pavadinimas" />
+
+        <EditText android:id="@+id/inputDescription"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Aprašymas" />
+
+        <EditText android:id="@+id/inputPrice"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Kaina" android:inputType="numberDecimal" />
+
+        <EditText android:id="@+id/inputQuantity"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Kiekis" android:inputType="number" />
+
+        <EditText android:id="@+id/inputCostPrice"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Savikaina" android:inputType="numberDecimal" />
+
+        <CheckBox android:id="@+id/inputSeasonal"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Sezoninis" />
+
+        <EditText android:id="@+id/inputMinQuantity"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Minimalus kiekis" android:inputType="number" />
+
+    </LinearLayout>
+</ScrollView>
