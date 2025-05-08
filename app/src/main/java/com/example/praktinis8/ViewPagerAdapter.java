@@ -7,22 +7,29 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
 
+    private final Fragment[] fragments;
+
     public ViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
+        fragments = new Fragment[] {
+                new MenuFragment(),
+                new OverViewFragment(),
+                new InsightFragment()
+        };
     }
 
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        if (position == 0) {
-            return new MenuFragment();
-        } else {
-            return new CartFragment();
-        }
+        return fragments[position];
     }
 
     @Override
     public int getItemCount() {
-        return 2;
+        return fragments.length;
+    }
+
+    public Fragment getFragment(int position) {
+        return fragments[position];
     }
 }

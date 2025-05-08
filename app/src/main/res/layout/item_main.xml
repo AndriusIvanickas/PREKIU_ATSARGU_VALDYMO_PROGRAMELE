@@ -39,5 +39,29 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"
             />
+
+        <TextView
+            android:id="@+id/dish_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kiekis: 0" />
+
+        <TextView
+            android:id="@+id/dish_cost_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Savikaina: €0.00" />
+
+        <TextView
+            android:id="@+id/dish_min_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minimalus: 0" />
+
+        <TextView
+            android:id="@+id/dish_seasonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sezoninis: Ne" />
     </LinearLayout>
 </LinearLayout>
